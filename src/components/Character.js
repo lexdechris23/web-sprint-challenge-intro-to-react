@@ -15,13 +15,16 @@ const StyledCards = styled.div`
 `
 const StyledDead = styled.p`
     color: red;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
+    text-transform: uppercase;
 `
 const StyledImg = styled.img`
     border-radius: 20px;
     width: auto;
     height: auto;
+    border: 3px solid whitesmoke;
+    box-shadow: 5px 5px 7px 1px black;
 
     `
 const Character = (props) => {
