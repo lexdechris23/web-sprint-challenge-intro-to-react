@@ -9,8 +9,3 @@ worker.start();
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
-const name = "chris";
-
-const dog = "fido"
-
-let test = "test"
