@@ -31,6 +31,7 @@ const App = () => {
     justify-content: center;
     align-items: space-between;
     flex-wrap: wrap;
+   
     
 `
 

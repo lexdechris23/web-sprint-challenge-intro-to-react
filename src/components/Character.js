@@ -6,10 +6,11 @@ const StyledCards = styled.div`
     background: cornsilk;
     border: 6px solid whitesmoke;
     border-radius: 20px;
-    margin: 3%;
-    padding: 1%;
+    margin: 2.5%;
+    padding: 2%;
     width: auto;
-    box-shadow: 5px 5px 5px 1px black;
+    height: auto;
+    box-shadow: 5px 5px 7px 1px black;
 
 `
 const StyledDead = styled.p`
@@ -19,6 +20,9 @@ const StyledDead = styled.p`
 `
 const StyledImg = styled.img`
     border-radius: 20px;
+    width: auto;
+    height: auto;
+
     `
 const Character = (props) => {
     
