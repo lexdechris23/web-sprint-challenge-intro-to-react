@@ -25,15 +25,7 @@ const App = () => {
     })
   }, [])
 
-  const StyledList = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: space-between;
-    flex-wrap: wrap;
-   
-    
-`
+ 
 
 
   return (
@@ -49,4 +41,12 @@ const App = () => {
   );
 }
 
+const StyledList = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: space-between;
+flex-wrap: wrap;
+`
 export default App;
+

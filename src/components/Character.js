@@ -2,6 +2,27 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
+const Character = (props) => {
+    
+
+    return(
+        <StyledCards>
+            <StyledImg src={props.character.image} alt={props.character.name}></StyledImg>
+            <h2>{props.character.name}</h2>
+            <p>Race: {props.character.species}</p>
+            <p>Gender: {props.character.gender}</p>
+            <p>Origin: {props.character.origin.name}</p>
+            <p>Location: {props.character.location.name}</p>
+            {props.character.status === "Dead" ?
+                <StyledDead>{props.character.status}</StyledDead>
+                :
+                <p>{props.character.status}</p>
+            }
+        </StyledCards>
+    )
+}
+
 const StyledCards = styled.div`
     background: cornsilk;
     border: 6px solid whitesmoke;
@@ -27,24 +48,5 @@ const StyledImg = styled.img`
     box-shadow: 5px 5px 7px 1px black;
 
     `
-const Character = (props) => {
-    
-
-    return(
-        <StyledCards>
-            <StyledImg src={props.character.image} alt={props.character.name}></StyledImg>
-            <h2>{props.character.name}</h2>
-            <p>Race: {props.character.species}</p>
-            <p>Gender: {props.character.gender}</p>
-            <p>Origin: {props.character.origin.name}</p>
-            <p>Location: {props.character.location.name}</p>
-            {props.character.status === "Dead" ?
-                <StyledDead>{props.character.status}</StyledDead>
-                :
-                <p>{props.character.status}</p>
-            }
-        </StyledCards>
-    )
-}
 
 export default Character 
